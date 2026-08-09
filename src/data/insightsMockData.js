@@ -1,0 +1,51 @@
+// src/data/insightsMockData.js
+export const insightsMockData = [
+  {
+    id: 1,
+    icon: "Lightbulb",
+    title: "Rising Sea Temperatures",
+    explanation: "Average sea surface temperature increased by 0.3°C this week, indicating a warming trend.",
+    timestamp: "2026-07-24 14:02",
+    confidence: 92,
+  },
+  {
+    id: 2,
+    icon: "AlertCircle",
+    title: "Coral Bleaching Risk",
+    explanation: "Heat stress index reached critical levels in the Great Barrier Reef, risk of bleaching elevated.",
+    timestamp: "2026-07-24 13:45",
+    confidence: 87,
+  },
+  {
+    id: 3,
+    icon: "TrendingUp",
+    title: "Plankton Bloom Detected",
+    explanation: "Satellite data shows a significant increase in chlorophyll concentrations off the coast of Japan.",
+    timestamp: "2026-07-24 13:20",
+    confidence: 81,
+  },
+  {
+    id: 4,
+    icon: "CloudRain",
+    title: "Acidification Spike",
+    explanation: "pH levels dropped by 0.05 in the North Atlantic, potentially harming shellfish.",
+    timestamp: "2026-07-24 12:58",
+    confidence: 78,
+  },
+  {
+    id: 5,
+    icon: "Globe",
+    title: "Plastic Accumulation",
+    explanation: "Micro‑plastic concentration rose 12% in the Pacific Garbage Patch.",
+    timestamp: "2026-07-24 12:30",
+    confidence: 85,
+  },
+  {
+    id: 6,
+    icon: "Water",
+    title: "Freshwater Influx",
+    explanation: "Unusual freshwater runoff detected in the Amazon delta after heavy rains.",
+    timestamp: "2026-07-24 12:05",
+    confidence: 89,
+  },
+];
