@@ -1,105 +1,108 @@
-# Ocean Guardian AI — AI-Powered Ocean Monitoring Platform
+# 🌊 Ocean Guardian AI
+### AI-Powered Ocean Monitoring & Marine Conservation Platform
 
-Ocean Guardian AI is a real-time, interactive React dashboard designed to monitor global ocean health, track marine biodiversity, analyze chemical/plastic pollution anomalies, and coordinate early warnings for marine conservation.
+Ocean Guardian AI is an interactive web platform designed to visualize ocean health, monitor marine pollution, track biodiversity, and present alerts that support ocean conservation. It combines map-based visualization, analytical dashboards, and an AI assistant interface to make ocean-related information easier to explore and understand.
 
----
+## ✨ Key Features
 
-## 🚀 Key Features
+- **Ocean Monitoring Dashboard** — View ocean health indicators, temperature, pH levels, and other displayed metrics.
+- **Interactive Ocean Map** — Explore mapped monitoring locations with color-coded health and warning statuses.
+- **Pollution Monitoring** — Visualize pollution categories such as plastic waste, microplastics, oil spills, and thermal anomalies.
+- **Marine Biodiversity Tracking** — Explore species information, biodiversity indicators, and conservation insights.
+- **Analytics & Charts** — View trends through interactive charts and data visualizations.
+- **AI Assistant Interface** — Explore ocean-related information through a dedicated chat interface.
+- **Alert Center** — Review alerts and manage their displayed status.
+- **Reports Section** — Access report options with PDF and CSV download interfaces.
+- **Responsive UI** — Navigate a modern dashboard with an ocean-inspired dark theme and smooth animations.
 
-- **Interactive Ocean Map**: Map layer tracking global telemetry sensors with color-coded warning, critical, and healthy statuses.
-- **Dynamic Ocean Details Drawer**: Swipe-to-close side drawer with real-time stats including pH levels, species count, water temp, and recent alerts.
-- **Upgraded Analytics Dashboard**: Includes 9 recharts-based trend visualizations (Ocean Health, Coral Bleaching, Temperature Comparison, and Species Migration trends).
-- **AI Assistant Widget**: Floating chat assistant with predefined questions, free-form inputs, HMR compilation, and persistent chat logs.
-- **Alert Center**: Early warnings with resolved/dismissed states and Framer Motion slide-out list animations.
-- **Reports Catalog**: Weekly, monthly, and annual policy reports with dynamic PDF/CSV download progress trackers.
-- **Premium Glassmorphism Design**: High-contrast, dark-mode-first aesthetic with smooth animations, custom scrollbars, and accessible keyboard navigability.
+> **Note:** Live-data connectivity and AI-based prediction capabilities depend on their implementation and integration. Dashboard metrics should not be interpreted as verified real-time ocean measurements unless connected to validated data sources.
 
----
+## 🛠️ Tech Stack
 
-## 🛠 Tech Stack
+| Category | Technologies |
+|---|---|
+| Frontend | React 18, Vite |
+| Styling | Tailwind CSS, CSS |
+| Maps | Leaflet, React Leaflet |
+| Charts | Recharts |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| State & UI | React components and Context API |
 
-- **Framework**: React 18 & Vite
-- **Styling**: Tailwind CSS & Vanilla CSS
-- **Animations**: Framer Motion
-- **Charts**: Recharts
-- **Map Visualizations**: Leaflet & React Leaflet
-- **Icons**: Lucide React
+## 🚀 Getting Started
 
----
+### Prerequisites
 
-## 📁 Folder Structure
+- Node.js and npm installed
+- Git installed
 
-```
-OceanGuardianAI/
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/deepak251817-collab/Ocean-guardian-ai.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Ocean-guardian-ai
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## 📂 Main Project Structure
+
+```text
+Ocean-guardian-ai/
 ├── src/
 │   ├── components/
-│   │   ├── charts/         # PHChart, TemperatureChart, CoralReefHealthChart...
-│   │   ├── drawer/         # OceanDetailsDrawer
-│   │   ├── layout/         # Sidebar, Navbar, MobileNav, PageHeader
-│   │   ├── map/            # OceanMap
-│   │   └── ui/             # AIAssistant, ActivityTimeline, ErrorState, Toast
+│   │   ├── charts/
+│   │   ├── drawer/
+│   │   ├── layout/
+│   │   ├── map/
+│   │   └── ui/
 │   ├── context/
-│   │   └── ThemeContext.jsx # Theme switcher & local storage state
 │   ├── data/
-│   │   └── mockData.js     # Merged mock records & metric variables
 │   ├── pages/
-│   │   ├── LandingPage.jsx
-│   │   ├── DashboardPage.jsx
-│   │   ├── PollutionPage.jsx
-│   │   ├── BiodiversityPage.jsx
-│   │   ├── AlertCenterPage.jsx
-│   │   └── ReportsPage.jsx
 │   ├── utils/
-│   │   ├── useDebounce.js  # Custom performance search debouncing
-│   │   └── oceanHealth.js  # Dynamic composite health calculator
-│   ├── App.jsx             # Code-split router configuration
-│   ├── index.css           # Global keyframes & variables
+│   ├── App.jsx
+│   ├── index.css
 │   └── main.jsx
 ├── package.json
 └── vite.config.js
 ```
 
----
+## 🔭 Future Scope
 
-## 💻 Installation & Setup
+- Integrate validated ocean observation APIs and satellite datasets.
+- Develop machine learning models for pollution-risk analysis and harmful algal bloom prediction.
+- Enable community-based pollution reporting with location and image evidence.
+- Add historical data analysis and improved conservation reporting.
+- Expand the platform with validated environmental indicators and monitoring sources.
 
-1. **Clone & Navigate**:
-   ```bash
-   git clone https://github.com/Deepak02205/ocean-guardian-ai.git
-   cd ocean-guardian-ai
-   ```
+## 👥 Project Team
 
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+**Deepak R**  
+**Yashaswini M**
 
-3. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
+## 🌍 Vision
+
+To make ocean-health information more accessible and support informed decisions for marine conservation through interactive visualization, data analysis, and intelligent monitoring tools.
 
 ---
 
-## 📊 Screens Overview
-
-- **Landing Page**: Immersive, full-screen entry outlining features and statistics.
-- **Ocean Health Dashboard**: Main cockpit featuring live status cards, dynamic dials, active tables, and charts.
-- **Pollution Monitor**: Tracks plastic, microplastic, oil spill, and thermal plumes with intervention options.
-- **Biodiversity Tracker**: Species censuses, threat level indices, and conservation action items.
-- **Alert Center**: Ingest hub for resolving or dismissing early warning triggers.
-
----
-
-## 🔮 Future Scope
-
-- **Real Live-Data API Integration**: Connecting to NOAA/GEBCO satellite registries.
-- **Machine Learning Predictor**: Deploying TensorFlow.js models directly in the client to predict red tide events.
-- **User Observations Submissions**: Enabling divers and scientists to upload photos and coordinate validation.
-
----
-
-## 👥 Contributors & Team
-
-- **Deepak** — Project Architect & Lead Developer
-- **Antigravity AI** — Pair Programmer & Architect Assistant
+*Built with the goal of supporting ocean awareness, marine biodiversity, and environmental sustainability.*
